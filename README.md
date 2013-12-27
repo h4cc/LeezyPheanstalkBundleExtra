@@ -9,7 +9,7 @@ This package currently contains:
 
 ------------------------
 
-#h2 PrefixedTubePheanstalkProxy
+## PrefixedTubePheanstalkProxy
 
 This Proxy is abled to prefix all tubes with a given string.
 
@@ -20,7 +20,7 @@ PrefixedTubePheanstalkProxy
     - getTubePrefix();
 ```
 
-#h2 Using a custom Proxy in Symfony2
+## Using a custom Proxy in Symfony2
 
 Define the the proxy as a service:
 
