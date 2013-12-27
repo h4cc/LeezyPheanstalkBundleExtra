@@ -2,10 +2,10 @@
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/h4cc/LeezyPheanstalkBundleExtra/badges/quality-score.png?s=fcaac46cf7a9c97db9da9a336f0222594cf4a5eb)](https://scrutinizer-ci.com/g/h4cc/LeezyPheanstalkBundleExtra/)
 [![Code Coverage](https://scrutinizer-ci.com/g/h4cc/LeezyPheanstalkBundleExtra/badges/coverage.png?s=63fb90374cb2105f5e26bd076c40582aeb50c0b1)](https://scrutinizer-ci.com/g/h4cc/LeezyPheanstalkBundleExtra/)
 
-LeezyPheanstalkBundleExtra
+h4cc/LeezyPheanstalkBundleExtra
 ==========================
 
-Some extra classes to work with LeezyPheanstalkBundle.
+Some extra classes to work with [LeezyPheanstalkBundle](https://github.com/armetiz/LeezyPheanstalkBundle).
 
 This package currently contains:
 
