@@ -13,6 +13,17 @@ This package currently contains:
 
 ------------------------
 
+## Installation
+
+Installing this package can be done with the following command:
+
+```
+php composer.phar require h4cc/pheanstalk-bundle-extra:dev-master
+```
+
+_Hint: Use a more stable version if available!_
+
+
 ## PrefixedTubePheanstalkProxy
 
 This Proxy is abled to prefix all tubes with a given string.
@@ -48,7 +59,7 @@ services:
             - [ setTubePrefix, [ "your_app_" ] ]
 ```
 
-Active the proxy in the config.yml like this:
+Activate the proxy in the app/config/config.yml like this:
 
 ```
 leezy_pheanstalk:
