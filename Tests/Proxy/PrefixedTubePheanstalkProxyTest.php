@@ -129,6 +129,8 @@ class PrefixedTubePheanstalkProxyTest extends \PHPUnit_Framework_TestCase
         $pheanstalkProxy = new PrefixedTubePheanstalkProxy();
         $pheanstalkProxy->setTubePrefix('test_');
 
+        $this->assertEquals('test_', $pheanstalkProxy->getTubePrefix());
+
         $pheanstalkMock = $this->getMock('Pheanstalk_PheanstalkInterface');
         $dispatchMock = $this->getMock('Symfony\Component\EventDispatcher\EventDispatcherInterface');
 

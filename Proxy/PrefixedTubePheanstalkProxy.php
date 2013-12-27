@@ -36,6 +36,16 @@ class PrefixedTubePheanstalkProxy extends PheanstalkProxy
     }
 
     /**
+     * Prefix used for tubes.
+     *
+     * @return string
+     */
+    public function getTubePrefix()
+    {
+        return $this->tubePrefix;
+    }
+
+    /**
      * {@inheritDoc}
      */
     public function ignore($tube)
