@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/h4cc/LeezyPheanstalkBundleExtra.png?branch=master)](https://travis-ci.org/h4cc/LeezyPheanstalkBundleExtra)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/h4cc/LeezyPheanstalkBundleExtra/badges/quality-score.png?s=fcaac46cf7a9c97db9da9a336f0222594cf4a5eb)](https://scrutinizer-ci.com/g/h4cc/LeezyPheanstalkBundleExtra/)
 [![Code Coverage](https://scrutinizer-ci.com/g/h4cc/LeezyPheanstalkBundleExtra/badges/coverage.png?s=63fb90374cb2105f5e26bd076c40582aeb50c0b1)](https://scrutinizer-ci.com/g/h4cc/LeezyPheanstalkBundleExtra/)
+[![HHVM Status](http://hhvm.h4cc.de/badge/h4cc/pheanstalk-bundle-extra.svg)](http://hhvm.h4cc.de/package/h4cc/pheanstalk-bundle-extra)
 
 h4cc/LeezyPheanstalkBundleExtra
 ==========================
