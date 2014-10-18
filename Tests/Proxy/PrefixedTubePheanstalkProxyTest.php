@@ -88,17 +88,13 @@ class PrefixedTubePheanstalkProxyTest extends \PHPUnit_Framework_TestCase
         $pheanstalkMock = $this->getMock('Pheanstalk_PheanstalkInterface');
         $dispatchMock = $this->getMock('Symfony\Component\EventDispatcher\EventDispatcherInterface');
 
-        $builder = $pheanstalkMock->expects($this->atLeastOnce())->method($name);
+        $builder = $pheanstalkMock->expects($this->once())->method($name);
         call_user_func_array(array($builder, 'with'), $value);
-        $builder->will($this->returnValue(1337));
-
 
         $pheanstalkProxy->setPheanstalk($pheanstalkMock);
         $pheanstalkProxy->setDispatcher($dispatchMock);
 
         $result = call_user_func_array(array($pheanstalkProxy, $name), $value);
-
-        $this->assertEquals(1337, $result, "Wrong return value detected.");
     }
 
     /**
@@ -134,16 +130,12 @@ class PrefixedTubePheanstalkProxyTest extends \PHPUnit_Framework_TestCase
         $pheanstalkMock = $this->getMock('Pheanstalk_PheanstalkInterface');
         $dispatchMock = $this->getMock('Symfony\Component\EventDispatcher\EventDispatcherInterface');
 
-        $builder = $pheanstalkMock->expects($this->atLeastOnce())->method($name);
+        $builder = $pheanstalkMock->expects($this->once())->method($name);
         call_user_func_array(array($builder, 'with'), $expectedCallValue);
-        $builder->will($this->returnValue($returnValue));
-
 
         $pheanstalkProxy->setPheanstalk($pheanstalkMock);
         $pheanstalkProxy->setDispatcher($dispatchMock);
 
         $result = call_user_func_array(array($pheanstalkProxy, $name), $value);
-
-        $this->assertEquals($expectedReturnValue, $result, "Wrong return value detected.");
     }
 }

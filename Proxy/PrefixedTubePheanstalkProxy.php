@@ -173,7 +173,7 @@ class PrefixedTubePheanstalkProxy extends PheanstalkProxy
      */
     protected function prefixTube($tube)
     {
-        return $this->tubePrefix . $tube;
+        return $this->getTubePrefix() . $tube;
     }
 
     /**
@@ -185,8 +185,9 @@ class PrefixedTubePheanstalkProxy extends PheanstalkProxy
      */
     protected function unprefixTube($tube)
     {
-        if ($this->tubePrefix && 0 === strpos($tube, $this->tubePrefix)) {
-            return substr($tube, strlen($this->tubePrefix)) . '';
+        $tubePrefix = $this->getTubePrefix();
+        if ($tubePrefix && 0 === strpos($tube, $tubePrefix)) {
+            return substr($tube, strlen($tubePrefix)) . '';
         }
         return $tube;
     }
